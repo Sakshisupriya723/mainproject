@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Facebook</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    
-    #header {
-      background-color: #2672f5;
-      padding: 20px;
-      color: #fff;
-    }
-    
-    #content {
-      margin-top: 20px;
-      padding: 20px;
-    }
-    
-    #footer {
-      background-color: #FFA500;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Patient Fundraising</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
 </head>
 <body>
-  <div id="header">
-    <h1>Welcome to code deploy</h1>
-  </div>
-  
-  <div id="content">
-    <!-- Post 1 -->
-    <div class="post">
-      <h3>Sakshi Supriya</h3>
-      <p>Its jai shree ram.</p>
-    </div>
-    
-    <!-- Post 2 -->
-    <div class="post">
-      <h3>by Sakshi Supriya</h3>
-      <p>Here I successfully deploy the code with code pipeline.</p>
-    </div>
-    
-    <!-- Post 3 -->
-    <div class="post">
-      <h3>Thank you</h3>
-    </div>
-    
-    <!-- Add more posts here -->
-  </div>
-  
-  <div id="footer">
-    &copy; 21A91F0055. All rights reserved.
-  </div>
-</body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Help Save Lives</h1>
+            <p>Donate to provide financial assistance to COVID-19 patients in need</p>
+            <a href="#donate" class="cta-button">Donate Now</a>
+        </section>
+
+        <section id="about">
+            <h2>About Our Cause</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel nisl vel odio posuere tristique. Suspendisse potenti. Mauris congue orci et mi consectetur, vitae bibendum nulla aliquet.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Medical Expenses Coverage</h3>
+                    <p>We provide financial support to cover medical expenses such as hospital bills, treatments, and medications.</p>
+                </li>
+                <li>
+                    <h3>Emergency Relief Aid</h3>
+                    <p>We offer emergency relief aid to COVID-19 patients and their families who are facing financial hardships due to the pandemic.</p>
+                </li>
+                <li>
+                    <h3>Mental Health Support</h3>
+                    <p>We provide counseling services and mental health support to COVID-19 patients and their families to help them cope with the emotional impact of the disease.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="donate">
+            <h2>Donate Today</h2>
+            <p>Your contribution can make a difference in the lives of COVID-19 patients. Every penny counts!</p>
+            <form action="donation_process.php" method="POST">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" step="1" required>
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please reach out to us:</p>
+            <ul>
+                <li>Email: sakshiange04.com</li>
+                <li>Phone: 7979890156</li>
+                <li>Address: Bihar, patna, yadav lane</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 COVID-19 Patient Fundraising. All rights reserved.</p>
+  </footer>
+  </body>
 </html>
