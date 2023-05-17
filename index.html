@@ -1,89 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Chatting with Friends</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Patient Fundraising</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-      }
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-      }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-      h1 {
-        font-size: 2em;
-        margin: 0;
-      }
+        /* Add the rest of the CSS styles here */
 
-      main {
-        padding: 20px;
-      }
+        /* ... */
 
-      #chatbox {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        height: 300px;
-        overflow-y: scroll;
-      }
-
-      .message {
-        margin-bottom: 10px;
-      }
-
-      .message p:first-child {
-        font-weight: bold;
-      }
-
-      #chat-form {
-        margin-top: 20px;
-      }
-
-      #message-input {
-        padding: 10px;
-        width: 70%;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-
-      button[type="submit"] {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-
-      button[type="submit"]:hover {
-        background-color: #555;
-      }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Chatting with Friends</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <div id="chatbox">
-        <div class="message">
-          <p>Friend 1:</p>
-          <p>Hey, what's up?</p>
-        </div>
-        <div class="message">
-          <p>You:</p>
-          <p>Not much, how about you?</p>
-        </div>
-      </div>
-      <form id="chat-form">
-        <input type="text" id="message-input" placeholder="Type your message...">
-        <button type="submit">Send</button>
-      </form>
-    </main>
-  </body>
+        <section id="home">
+            <h1>Help Save Lives</h1>
+            <p>Donate to provide financial assistance to COVID-19 patients in need</p>
+            <a href="#donate" class="cta-button">Donate Now</a>
+        </section>
+
+        <section id="about">
+            <h2>About Our Cause</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel nisl vel odio posuere tristique. Suspendisse potenti. Mauris congue orci et mi consectetur, vitae bibendum nulla aliquet.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Medical Expenses Coverage</h3>
+                    <p>We provide financial support to cover medical expenses such as hospital bills, treatments, and medications.</p>
+                </li>
+                <li>
+                    <h3>Emergency Relief Aid</h3>
+                    <p>We offer emergency relief aid to COVID-19 patients and their families who are facing financial hardships due to the pandemic.</p>
+                </li>
+                <li>
+                    <h3>Mental Health Support</h3>
+                    <p>We provide counseling services and mental health support to COVID-19 patients and their families to help them cope with the emotional impact of the disease.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="donate">
+            <h2>Donate Today</h2>
+            <p>Your contribution can make a difference in the lives of COVID-19 patients. Every penny counts!</p>
+            <form action="donation_process.php" method="POST">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" step="1" required>
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please reach out to us:</p>
+            <ul>
+                <li>Email: info@example.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 
+123 Main Street, City, Country</li>
+</ul>
+</section>
+</main>
+    <footer>
+    <p>&copy; 2023 COVID-19 Patient Fundraising. All rights reserved.</p>
+</footer>
+</body>
 </html>
+    
