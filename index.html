@@ -1,31 +1,89 @@
-		<section class="cart">
-			<h3>Cart</h3>
-			<ul>
-				<li>
-					<h4>Spaghetti Bolognese</h4>
-					<p class="price">$10.99</p>
-					<div class="quantity">
-						<button>-</button>
-						<span>1</span>
-						<button>+</button>
-					</div>
-				</li>
-				<li>
-					<h4>Pepperoni Pizza</h4>
-					<p class="price">$12.99</p>
-					<div class="quantity">
-						<button>-</button>
-						<span>1</span>
-						<button>+</button>
-					</div>
-				</li>
-			</ul>
-			<p class="total">Total: $23.98</p>
-			<button>Place Order</button>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Food Order. All rights reserved.</p>
-	</footer>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatting with Friends</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      #chatbox {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        height: 300px;
+        overflow-y: scroll;
+      }
+
+      .message {
+        margin-bottom: 10px;
+      }
+
+      .message p:first-child {
+        font-weight: bold;
+      }
+
+      #chat-form {
+        margin-top: 20px;
+      }
+
+      #message-input {
+        padding: 10px;
+        width: 70%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chatting with Friends</h1>
+    </header>
+    <main>
+      <div id="chatbox">
+        <div class="message">
+          <p>Friend 1:</p>
+          <p>Hey, what's up?</p>
+        </div>
+        <div class="message">
+          <p>You:</p>
+          <p>Not much, how about you?</p>
+        </div>
+      </div>
+      <form id="chat-form">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
 </html>
