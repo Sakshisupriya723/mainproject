@@ -1,64 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My College Projects</title>
-  <link rel="stylesheet" href="styles.css">
+	<title>Travel Agency</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #336;
+			color: #fff;
+			padding: 20px;
+		}
+
+		nav {
+			background-color: #446;
+			color: #fff;
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.menu {
+			margin-top: 20px;
+		}
+
+		.menu ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.menu ul li {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		.menu ul li h4 {
+			margin-top: 0;
+		}
+
+		.menu ul li p.price {
+			color: green;
+			font-weight: bold;
+		}
+
+		.menu ul li button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+
+		.menu ul li button:hover {
+			background-color: #444;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
 </head>
-
 <body>
-  <header>
-    <h1>My College Projects</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum est id ipsum eleifend, vitae fermentum erat vestibulum.</p>
-        <img src="project1.jpg" alt="Project 1">
-      </div>
-
-      <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum est id ipsum eleifend, vitae fermentum erat vestibulum.</p>
-        <img src="project2.jpg" alt="Project 2">
-      </div>
-
-      <!-- Add more project sections here -->
-
-    </section>
-
-    <section>
-      <h2>About Me</h2>
-      <p>I am a dedicated student passionate about computer science and technology. Throughout my college journey, I have completed various projects that have allowed me to enhance my skills and gain practical experience in different areas. Below are some of the notable projects I have worked on.</p>
-    </section>
-
-    <section>
-      <h2>Contact Me</h2>
-      <p>If you have any inquiries or would like to learn more about my projects, please feel free to reach out to me. You can contact me via email at <strong>yourname@example.com</strong> or connect with me on social media:</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://www.github.com/">GitHub</a></li>
-        <!-- Add more social media links here -->
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-  </footer>
+	<header>
+		<h1>Travel Agency</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Destinations</a></li>
+			<li><a href="#">Tours</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Explore the World!</h2>
+		<p>Discover amazing destinations and plan your dream vacation with our travel agency. Browse our offerings and book your adventure today!</p>
+		<section class="menu">
+			<h3>Our Destinations</h3>
+			<ul>
+				<li>
+					<h4>Paris, France</h4>
+					<p>Experience the romance and charm of the City of Love.</p>
+					<p class="price">$1999</p>
+					<button>Book Now</button>
+				</li>
+				<li>
+					<h4>Bali, Indonesia</h4>
+					<p>Relax on stunning beaches and immerse yourself in rich cultural traditions.</p>
+					<p class="price">$1499</p>
+					<button>Book Now</button>
+				</li>
+				<li>
+					<h4>Machu Picchu, Peru</h4>
+					<p>Embark on an unforgettable journey to the ancient Incan ruins.</p>
+					<p class="price">$2499</p>
+					<button>Book Now</button>
+				</li>
+			</ul>
+		</section>
+		<section class="cart">
+			<h3>Cart</h3>
+			<ul>
+				<li>
+					<h4>Paris, France</h4>
+					<p class="price">$1999</p>
+					<div class="quantity">
+						<button>-</button>
+						<span>1</span>
+						<button>+</button>
+					</div>
+				</li>
+				<li>
+					<h4>Machu Picchu, Peru</h4>
+					<p class="price">$2499</p>
+					<div class="quantity">
+						<button>-</button>
+						<span>1</span>
+						<button>+</button>
+					</div>
+				</li>
+			</ul>
+			<p class="total">Total: $4498</p>
+			<button>Book Now</button>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Travel Agency. All rights reserved.</p>
+	</footer>
 </body>
-
 </html>
