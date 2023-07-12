@@ -1,158 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Food Order with using ci/cd </title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-
-		header {
-			background-color: #336;
-			color: #fff;
-			padding: 20px;
-		}
-
-		nav {
-			background-color: #446;
-			color: #fff;
-			padding: 10px;
-		}
-
-		nav ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		nav ul li {
-			display: inline-block;
-			margin-right: 20px;
-		}
-
-		nav ul li a {
-			color: #fff;
-			text-decoration: none;
-		}
-
-		main {
-			padding: 20px;
-		}
-
-		.menu {
-			margin-top: 20px;
-		}
-
-		.menu ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		.menu ul li {
-			border: 1px solid #ccc;
-			padding: 10px;
-			margin-bottom: 10px;
-		}
-
-		.menu ul li h4 {
-			margin-top: 0;
-		}
-
-		.menu ul li p.price {
-			color: green;
-			font-weight: bold;
-		}
-
-		.menu ul li button {
-			background-color: #333;
-			color: #fff;
-			border: none;
-			padding: 5px 10px;
-			cursor: pointer;
-		}
-
-		.menu ul li button:hover {
-			background-color: #444;
-		}
-
-		footer {
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<header>
-		<h1>Food Order</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-	<main>
-		<h2>Jai shree ram!</h2>
-		<p>We offer a wide variety of delicious dishes, all made with fresh and high-quality ingredients. Browse our menu and place your order today!</p>
-		<section class="menu">
-			<h3>Our Menu</h3>
-			<ul>
-				<li>
-					<h4>Spaghetti Bolognese</h4>
-					<p>A classic Italian dish with ground beef, tomato sauce, and spaghetti noodles.</p>
-					<p class="price">$10.99</p>
-					<button>Add to Cart</button>
-				</li>
-				<li>
-					<h4>Chicken Caesar Salad</h4>
-					<p>A delicious salad with grilled chicken, romaine lettuce, croutons, and Caesar dressing.</p>
-					<p class="price">$8.99</p>
-					<button>Add to Cart</button>
-				</li>
-				<li>
-					<h4>Pepperoni Pizza</h4>
-					<p>A classic pizza topped with tomato sauce, mozzarella cheese, and pepperoni slices.</p>
-					<p class="price">$12.99</p>
-					<button>Add to Cart</button>
-				</li>
-			</ul>
-		</section>
-    		<section class="cart">
-			<h3>Cart</h3>
-			<ul>
-				<li>
-					<h4>Spaghetti Bolognese</h4>
-					<p class="price">$10.99</p>
-					<div class="quantity">
-						<button>-</button>
-						<span>1</span>
-						<button>+</button>
-					</div>
-				</li>
-				<li>
-					<h4>Pepperoni Pizza</h4>
-					<p class="price">$12.99</p>
-					<div class="quantity">
-						<button>-</button>
-						<span>1</span>
-						<button>+</button>
-					</div>
-				</li>
-			</ul>
-			<p class="total">Total: $23.98</p>
-			<button>Place Order</button>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Food Order. All rights reserved.</p>
-	</footer>
-</body>
-</html>
 
+<body>
+  <header>
+    <h1>Welcome to our Flower Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Welcome to our flower website! We are passionate about flowers and dedicated to providing you with the most beautiful blooms. Whether you need flowers for a special occasion or just want to brighten up your day, we've got you covered.</p>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="image-gallery">
+        <img src="flower1.jpg" alt="Flower 1">
+        <img src="flower2.jpg" alt="Flower 2">
+        <img src="flower3.jpg" alt="Flower 3">
+        <!-- Add more images here -->
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to place an order, please don't hesitate to get in touch with us. You can reach us by phone at <strong>123-456-7890</strong> or by email at <strong>info@flowerwebsite.com</strong>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Flower Website. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
